@@ -1,0 +1,11 @@
+/home/uczen/ = ~ (to jest to samo)
+cd (nazwa pliku katalogu)
+cd ..(wychodzenie z katalogu)
+touch (nazwa pliku(.txt))------------ tworzenie pliku
+mcedit (nazwa pliku)------------- edycja pliku
+nano (nazwa pliku)
+mkdir test ----------tworzy folder
+rm (nazwa pliku.txt)------------usuwanie pliku
+rm -r (nazwa folderu) -------------usuwanie katalogu i wszytko w nim(zawartosc)
+./(nazwa programy)----[./skrypt.sh]-------------wywoływanie programu
+chmod tx skrypt.sh-------------daje prawa do wykonywania skryptu
