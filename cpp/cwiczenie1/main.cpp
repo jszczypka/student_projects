@@ -1,22 +1,33 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main(){
-	int tab[4] = {6,9,1,2};
-	int n = 4;
+	vector<int> baka;
 
-	for (int i = 0; i < n - 1; i++){
-		for (int j = 0; j < n - 1; j++){ 
-			if (tab[j] > tab[j+1]){
-				int zmienna = tab[j];
-				tab[j] = tab[j+1];
-				tab[j+1] =zmienna;
+	int m;
+	while (true){
+		cout << "Podaj liczbę lub naciśnij cyfre 0 by sortować. Twoja kolej: ";
+		cin >> m;
+		if (m == 0){
+			break;
+		}else{
+			baka.push_back(m);
+		}
+	}
+
+	for (int i = 0; i < baka.size() - 1; i++){
+		for (int j = 0; j < baka.size() - 1; j++){ 
+			if (baka[j] > baka[j+1]){
+				int zmienna = baka[j];
+				baka[j] = baka[j+1];
+				baka[j+1] = zmienna;
 			}
 		}
 	}
-	for (int i = 0; i < n; i++){
-	cout << tab[i] << " ";
+	for (int i = 0; i < baka.size(); i++){
+	cout << baka[i] << " ";
 	}
 	return 0;
 }
